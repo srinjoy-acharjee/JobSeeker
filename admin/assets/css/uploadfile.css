@@ -1,0 +1,106 @@
+.ajax-file-upload-statusbar {
+  border: 1px solid #ddd;
+  margin: 0;
+  width: 100%;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 5px;
+  display: inline-block;
+  background-color: #fcfcfc;
+}
+.ajax-file-upload-filename {
+  float: left;
+  font-size: 85%;
+  height: auto;
+  margin: 0;
+}
+.ajax-file-upload-filesize {
+  width: 50px;
+  height: auto;
+  margin: 0 0 0 5px;
+  display: inline-block;
+  vertical-align:middle;
+}
+.ajax-file-upload-progress {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  float: right;
+  height: 20px;
+  margin: 0 0 0 5px;
+  padding: 1px;
+  position: relative;
+  width: 250px;
+}
+.ajax-file-upload-bar {
+  background-color: #0ba1b5;
+  border-radius: 0;
+  color: #ffffff;
+  height: 16px;
+  width: 0;
+}
+.ajax-file-upload-percent {
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  left: 48%
+}
+.ajax-file-upload-red {
+  background-color: #e4685d;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 0 5px;
+  padding: 1px 10px;
+  text-decoration: none;
+  vertical-align: top;
+}
+.ajax-file-upload-green {
+  background-color: #77b55a;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 0 5px;
+  padding: 1px 10px;
+  text-decoration: none;
+  vertical-align: top;
+}
+.ajax-file-upload {
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 5px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.ajax-file-upload:hover {
+  background: #E5E5E5;
+  border: 1px #bcbcbc solid;
+}
+.ajax-upload-dragdrop {
+	border-top: 1px solid #ddd;
+	width: 100%;
+	color: #DADCE3;
+	text-align:left;
+	vertical-align:middle;
+	padding:10px 10px 0px 10px;
+}
+.state-hover {
+	border:2px solid #A5A5C7;
+}
+.ajax-file-upload-container {
+	margin:0;
+}
