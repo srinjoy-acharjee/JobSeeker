@@ -1,0 +1,29 @@
+<?php
+/* Database Connection */
+$db = mysqli_connect('localhost', 'root', '', 'jobseeker');
+if ( mysqli_connect_errno() ) {
+	printf("Connection failed: %s\ ", mysqli_connect_error());
+	exit();
+}
+
+/* Session Start */
+session_start();
+
+/* PHPMailer for Mail */
+require 'PHPMailer/PHPMailerAutoload.php';
+$mail = new PHPMailer;
+$mail->isSMTP();                            		// Set mailer to use SMTP
+$mail->Host 		= 'smtp.gmail.com';       		// Specify main and backup SMTP servers
+$mail->SMTPAuth 	= TRUE;                     	// Enable SMTP Authentication
+$mail->Username 	= 'jobseeker.supp@gmail.com';   // SMTP Username
+$mail->Password 	= 'Jobseeker@Supp'; 			// SMTP Password
+$mail->SMTPSecure 	= 'ssl';                  		// Enable TLS Encryption, `ssl` also accepted
+$mail->Port 		= 465;                        	// TCP port to connect to
+$mail->WordWrap 	= 50;
+$mail->smtpConnect([
+    'ssl' => [
+        'verify_peer' 		=> FALSE,
+        'verify_peer_name' 	=> FALSE,
+        'allow_self_signed' => TRUE
+    ]
+]);
